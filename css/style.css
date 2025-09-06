@@ -591,9 +591,10 @@ ol {
 	text-align: center;
 }
 .footer-logo {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 	color: #fff;
-	display: flex;
-	justify-content: center;
 }
 
 .copyright {
