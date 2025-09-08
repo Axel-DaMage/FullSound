@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>SolMusic | Carrito de Compras</title>
+    <title>SolMusic | Detalle de Producto</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Carrito de compras SolMusic">
-    <meta name="keywords" content="carrito, tienda, música, html">
+    <meta name="description" content="Detalle de producto SolMusic">
+    <meta name="keywords" content="producto, tienda, música, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Favicon -->
@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/slicknav.min.css"/>
-
-    <!-- Main Stylesheets -->
     <link rel="stylesheet" href="css/style.css"/>
 
     <!--[if lt IE 9]>
@@ -48,72 +46,48 @@
         </div> 
         <ul class="main-menu">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Beats</a></li>
+            <li><a href=".html">Beats</a></li>
             <li><a href="carrito.html">Carrito</a></li>
             <li><a href="contact.html">Administracion</a></li>
         </ul>
-		<!-- Arreglar links y CSS -->
     </header>
     <!-- Header section end -->
 
-    <!-- Carrito de compras -->
-    <section class="cart-section spad">
+    <!-- Detalle de producto -->
+    <section class="product-detail-section spad">
         <div class="container">
-            <h2 class="mb-4">Carrito de Compras</h2>
-            <div class="table-responsive">
-                <table class="table table-bordered table-cart" id="cart-table">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img src="img/15.jpg" alt="Producto 1" style="width:60px; height:60px; object-fit:cover; margin-right:10px;">
-                                <span>Álbum Jazz Clásico</span>
-                            </td>
-                            <td>$120.00</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/14.jpg" alt="Producto 2" style="width:60px; height:60px; object-fit:cover; margin-right:10px;">
-                                <span>Single Electrónico</span>
-                            </td>
-                            <td>$30.00</td>
-                        </tr>
-                        <!-- Puedes agregar más productos aquí -->
-                    </tbody>
-                </table>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-md-4">
-                    <div class="cart-summary p-4 border rounded">
-                        <h4>Resumen</h4>
-                        <p>Subtotal: <span class="float-right">$150.00</span></p>
-                        <p>Envío: <span class="float-right">$0.00</span></p>
-                        <hr>
-                        <h5>Total: <span class="float-right">$150.00</span></h5>
-                        <a href="#" class="site-btn btn-block mt-3">Finalizar compra</a>
-                    </div>
+            <div class="row align-items-center">
+                <!-- Imagen del producto -->
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="img/16.jpg" alt="Álbum Jazz Clásico" class="img-fluid rounded shadow">
+                </div>
+                <!-- Información del producto -->
+                <div class="col-md-7">
+                    <h2>La melodia de Lampa</h2>
+                    <p class="mb-2"><strong>Artista:</strong>  Ismael Rivas</p>
+                    <p class="mb-2"><strong>Género:</strong> Electrónica</p>
+                    <p class="mb-2"><strong>Descripción:</strong> Disfruta de un clásico de la Electrónica en este beat exclusivo, ideal para ambientar cualquier momento.</p>
+                    <p class="mb-3"><strong>Precio:</strong> <span class="h4 text-success">$250.000</span></p>
+                    <audio controls class="w-100 mb-3">
+                        <source src="audio/1.mp3" type="audio/mpeg">
+                    </audio>
+                    <a href="carrito.html" class="site-btn"><i class="fa fa-shopping-cart"></i> Agregar al carrito</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Fin carrito de compras -->
+    <!-- Fin detalle de producto -->
 
     <!-- Footer section -->
     <footer class="footer-section">
-		<div class="container">
-			<div class="footer-widget">
-				<h2>Footer</h2>
-			</div>
-			<div class="logo-text">FullSound</div>
-			<div class="copyright">
+        <div class="container">
+            <div class="footer-widget">
+            </div>
+            <div class="logo-text">FullSound</div>
+            <div class="copyright">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla fue creada con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
 </div>
-		</div>
+        </div>
     </footer>
     <!-- Footer section end -->
     
