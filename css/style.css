@@ -2079,13 +2079,13 @@ Tienda de Beats (Shop Section)
 .form-control {
 	background: rgba(255,255,255,0.1);
 	border: 1px solid rgba(255,255,255,0.3);
-	color: white;
+	color: black;
 }
 
 .form-control:focus {
 	background: rgba(255,255,255,0.2);
 	border-color: var(--highlight);
-	color: white;
+	color: black;
 	box-shadow: 0 0 0 0.2rem rgba(163, 218, 88, 0.25);
 }
 
