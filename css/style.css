@@ -161,6 +161,7 @@ ol {
 /* Clases auxiliares */
 .section-title {
 	margin-bottom: 60px;
+	text-align: center;
 }
 
 .section-title h2 {
@@ -191,7 +192,6 @@ ol {
 	color: var(--accent);
 }
 
-/* Botones */
 .site-btn {
 	display: inline-block;
 	border: none;
@@ -201,15 +201,17 @@ ol {
 	padding: 23px 20px;
 	border-radius: 50px;
 	text-transform: uppercase;	
-	background: var(--highlight);
-	color: var(--accent);
+	background: var(--bg);
+	color: var(--highlight);
 	line-height: normal;
 	cursor: pointer;
 	text-align: center;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .site-btn:hover {
-	color: var(--accent);
+	background-color: var(--highlight);
+	color: var(--bg);
 }
 
 .site-btn.sb-c2 {
@@ -278,7 +280,7 @@ ol {
 	z-index: 1000;
 }
 .hero-section {
-	min-height: 72px;
+	min-height: 100vh;
 	overflow: hidden;
 }
 
@@ -300,6 +302,9 @@ ol {
 	margin-right: 10px;
 }
 
+.hero-section .hs-text p {
+	text-align: center;
+}
 .site-logo {
 	display: flex;
 	align-items: center;
@@ -436,7 +441,7 @@ ol {
 ========================================*/
 
 .hs-item {
-	height: 724px;
+	height: 100vh;
 	padding-bottom: 90px;
 	display: flex;
 	align-items: center;
@@ -478,8 +483,9 @@ ol {
 }
 
 .hs-item .hs-text {
-	padding-top: 90px;
+	padding-top: 25vh;
 	max-width: 475px;
+	text-align: center;
 }
 
 .hr-img img {
@@ -532,7 +538,7 @@ ol {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: var(--secondary);
+	background: var(--accent);
 	margin-right: 10px;
 }
 
@@ -541,8 +547,8 @@ ol {
 }
 
 .hero-img {
-	width: 600px;
-	height: 600px;
+	width: 50vh;
+	height: 50vh;
 	object-fit: cover;
 	display: block;
 	margin-left: auto;
@@ -556,6 +562,7 @@ ol {
 /* Sección de introducción */
 .intro-section {
 	background: var(--fg);
+	text-align: center;
 }
 
 .intro-texto p{
@@ -574,33 +581,38 @@ ol {
 }
 
 .how-item .hi-icon {
+	width: 25px;
+	height: 25px;
 	position: relative;
-	width: 57px;
-	height: 57px;
 	border-radius: 50%;
 	background: var(--highlight);
-	margin-bottom: 25px;
-}
-
-.how-item .hi-icon img {
-	position: absolute;
-	right: -8px;
-	bottom: 0;
+	margin: 0 auto 35px;
 }
 
 .how-item h4 {
 	margin-bottom: 25px;
+	color: var(--highlight);
+	text-align: center;
 }
 
-.how-item p {
+.how-section .how-item p {
+	text-align: center;
+	color: var(--accent) !important;
 	font-weight: 400;
-	opacity: 0.6;
+}
+
+/* Additional specificity to override Bootstrap's text-white class */
+.how-section .text-white .how-item p {
+	text-align: center;
+	color: var(--accent) !important;
+	font-weight: 400;
 }
 
 /* Sección de conceptos */
 
 .concept-section {
 	background-color: var(--fg);
+	text-align: center;
 }
 
 .concept-section p {
@@ -624,6 +636,7 @@ ol {
 /* Sección de suscripción */
 .subscription-section {
 	background: var(--bg);
+	text-align: center;
 }
 
 .sub-text {
@@ -668,8 +681,19 @@ ol {
 }
 
 /* Sección Premium */
+.premium-section {
+	background-color: var(--fg);
+	text-align: center;
+}
+
 .premium-section p {
 	margin-bottom: 50px;
+	color: var(--bg);
+}
+
+.premium-section h2 {
+	margin-bottom: 50px;
+	color: var(--accent);
 }
 
 .premium-item {
@@ -717,6 +741,10 @@ ol {
 	margin-bottom: 20px;
 }
 
+.footer-text {
+	text-align: center;
+}
+
 .copyright {
 	font-size: 11px;
 	text-transform: uppercase;
@@ -740,6 +768,7 @@ Página de listas de reproducción
 
 .playlist-section .section-title {
 	float: left;
+	
 	
 }
 
@@ -985,7 +1014,7 @@ Página de categorías
 
 .single_player_container {
 	margin-top: 30px;
-	padding-left: 10px;
+	text-align: center;
 }
 
 .single_player_container .jp-interface {
