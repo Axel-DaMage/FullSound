@@ -6,64 +6,48 @@
     <meta name="description" content="Inicio de sesión FullSound">
     <meta name="keywords" content="login, usuarios, administradores, música, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="shortcut icon"/>
-
-    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
- 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<body>
-    <!-- Pre-cargador de página -->
+<body style="min-height: 100vh; display: flex; flex-direction: column; margin: 0;">
     <div id="preloder">
         <div class="loader"></div>
     </div>    
-    <!-- Sección de encabezado -->
     <header class="header-section clearfix">
         <a href="index.html" class="site-logo">
             <div class="logo-text">FullSound</div>
-        </a>
+        </a>        
         <div class="header-right">
             <div class="user-panel">
-                <a href="Sesión.html" class="login">Iniciar sesión</a>
-                <a href="Sesión.html" class="register">Crear una cuenta</a>
+                <a href="Sesion.html" class="login">Iniciar sesión</a>
+                <a href="Sesion.html" class="register">Crear una cuenta</a>
             </div> 
-        </div>        <ul class="main-menu">
+        </div>
+        <ul class="main-menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Beats.html">Beats</a></li>
             <li><a href="carrito.html">Carrito</a></li>
             <li><a href="admin.html">Administracion</a></li>
         </ul>
-        <!-- Mobile Menu Button -->
         <button class="mobile-menu-btn">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <!-- Mobile Menu -->
         <div class="mobile-menu">
             <a href="index.html">Inicio</a>
             <a href="Beats.html">Beats</a>
             <a href="carrito.html">Carrito</a>
             <a href="admin.html">Administracion</a>
-        </div>
-    </header>
-    <!-- Fin de sección de encabezado -->
+        </div>    </header>
 
-    <!-- Página de inicio de sesión -->
-    <section class="login-section spad" style="min-height:60vh; display:flex; align-items:center;">
+    <main style="flex: 1;">
+        <section class="login-section spad" style="min-height:60vh; display:flex; align-items:center;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5">
@@ -86,30 +70,26 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
+                </div>            </div>
         </div>
     </section>
-    <!-- Fin página de inicio de sesión -->
+    </main>
 
-    <!-- Sección pie de página -->
-    <footer class="footer-section">
-        <div class="container">            <div class="footer-text">
-				<a href="creditos.html"> Creditos </a>
-			</div>
+    <footer class="footer-section" style="margin-top: auto;">
+        <div class="container">
+            <div class="footer-text">
+                <a href="creditos.html"> Creditos </a>
+            </div>
             <div class="logo-text">FullSound</div>
             <div class="copyright">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla fue creada con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
-</div>
-		</div>
+            </div>
+        </div>
     </footer>
-    <!-- Fin sección pie de página -->
-    
-    <!--====== Javascripts & Jquery ======-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/validacion.js"></script>
-
     </body>
 </html>
+

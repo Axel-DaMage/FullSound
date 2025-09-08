@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>FullSound - Crear Cuenta</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Registro de usuarios FullSound">
+    <meta name="keywords" content="registro, crear cuenta, usuarios, música, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column; margin: 0;">
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>    
+    <header class="header-section clearfix">
+        <a href="index.html" class="site-logo">
+            <div class="logo-text">FullSound</div>
+        </a>        
+        <div class="header-right">
+            <div class="user-panel">
+                <a href="Sesion.html" class="login">Iniciar sesión</a>
+                <a href="registro.html" class="register">Crear una cuenta</a>
+            </div> 
+        </div>
+        <ul class="main-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Beats.html">Beats</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="admin.html">Administracion</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <a href="index.html">Inicio</a>
+            <a href="Beats.html">Beats</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="admin.html">Administracion</a>
+        </div>
+    </header>
+
+    <main style="flex: 1;">
+        <section class="login-section spad" style="min-height:60vh; display:flex; align-items:center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="card shadow p-4">
+                            <h2 class="text-center mb-4">Crear Cuenta</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="correo">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Crea una contraseña" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirmar contraseña</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña" required>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="terminos" required>
+                                    <label class="form-check-label" for="terminos">
+                                        Acepto los <a href="#" class="text-primary">términos y condiciones</a>
+                                    </label>
+                                </div>                                <div class="d-flex flex-column gap-3 mt-4">
+                                    <button type="submit" class="site-btn btn-block" style="font-size:1.2rem;">Crear Cuenta</button>
+                                    <div class="text-center">
+                                        <p class="mb-0">¿Ya tienes cuenta? <a href="Sesion.html" class="text-primary">Inicia sesión aquí</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section" style="margin-top: auto;">
+        <div class="container">
+            <div class="footer-text">
+                <a href="creditos.html"> Creditos </a>
+            </div>
+            <div class="logo-text">FullSound</div>
+            <div class="copyright">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla fue creada con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </div>
+        </div>
+    </footer>    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

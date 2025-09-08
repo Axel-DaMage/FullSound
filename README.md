@@ -1,20 +1,21 @@
-# Proyecto JazzSonnet 4
+# Proyecto FullSound
 
-Este proyecto es una plataforma web tipo Spotify donde artistas independientes pueden subir su música y cualquier persona puede descubrirla y escucharla gratis. 
-Los usuarios pueden explorar canciones por géneros, seguir artistas y crear playlists, mientras que los administradores moderan el contenido y organizan el catalogo musical.
+FullSound es una plataforma web para explorar, comprar y administrar Beats musicales. Los usuarios pueden descubrir música por género o artista, mientras que los administradores gestionan el contenido.
 
-## Estructura del Proyecto (Hacer al final)
+## Estructura del Proyecto
 
 ```
-hello-world-project
-├── index.html        # 
-├── css
-│   └── styles.css    # 
-├── js
-│   └── script.js     # 
-├── bootstrap
-│   └── bootstrap.min.css # 
-└── README.md         # 
+JazzSonnet4/
+├── index.html        # Página principal
+├── css/              # Estilos CSS
+├── js/               # Scripts JavaScript
+├── audio/            # Archivos de audio
+├── img/              # Imágenes
+├── admin.html        # Panel de administración
+├── carrito.html      # Página del carrito de compras
+├── registro.html     # Página de registro
+├── Sesion.html       # Página de inicio de sesión
+└── README.md         # Este archivo
 ```
 
 ## Licencia

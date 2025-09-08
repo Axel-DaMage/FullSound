@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>FullSound - Administración</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Panel de administración FullSound">
+    <meta name="keywords" content="admin, administración, música, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <header class="header-section clearfix">
+        <a href="index.html" class="site-logo">
+            <div class="logo-text">FullSound</div>
+        </a>        <div class="header-right">
+            <div class="user-panel">
+                <a href="Sesion.html" class="login">Iniciar sesión</a>
+                <a href="registro.html" class="register">Crear una cuenta</a>
+            </div>
+        </div>
+        <ul class="main-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Beats.html">Beats</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="admin.html" class="active">Administracion</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <a href="index.html">Inicio</a>
+            <a href="Beats.html">Beats</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="admin.html">Administracion</a>
+        </div>
+    </header>    <section class="admin-container">
+        <div class="container">
+            <h2 class="text-center mb-5 text-white">Panel de Administración</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number" id="totalBeats">9</div>
+                        <div>Total de Beats</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number" id="totalUsers">5</div>
+                        <div>Usuarios Registrados</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number" id="activeUsers">4</div>
+                        <div>Usuarios Activos</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number" id="totalSales">$1,354,999</div>
+                        <div>Ventas Totales</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <a href="creditos.html"> Creditos </a>
+            </div>
+            <div class="logo-text">FullSound</div>
+            <div class="copyright">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla fue creada con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
+
