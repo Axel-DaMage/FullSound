@@ -432,7 +432,11 @@ ol {
 	color: var(--highlight);
 }
 
-.slicknav_menu {
+.mobile-menu-btn {
+	display: none;
+}
+
+.mobile-menu {
 	display: none;
 }
 
@@ -1534,53 +1538,78 @@ Artest Page
         padding-right: 0;
         box-sizing: border-box;
     }
-    .hero-section { min-height: 724px; }
-    .hr-img { display: none; }
-    .slicknav_menu {
+    .hero-section { min-height: 724px; }    .hr-img { display: none; }
+    .mobile-menu-btn {
         display: block;
-        background: transparent;
-        margin-top: -60px;
-    }    .slicknav_nav {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
         background: var(--fg);
-        margin-bottom: 35px;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .mobile-menu-btn span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--accent);
+        margin: 4px auto;
+        transition: all 0.3s ease;
+    }
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--fg);
         border-radius: 15px;
+        padding: 20px;
+        min-width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        z-index: 999;
     }
-    .slicknav_nav ul { margin: 0; }
-    .slicknav_nav .slicknav_row,
-    .slicknav_nav a {
-        padding: 12px 25px;
-        margin: 0;
+    .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
-    .slicknav_nav a:hover {
-        border-radius: 0;
-        color: var(--highlight);
-        background: transparent;
-    }    .slicknav_btn {
-        position: relative;
-        top: -24px;
-        background: var(--fg);
-        border-radius: 99px;
-    }
-    .main-menu,
-    .header-right { display: none; }
-    .header-right-warp .header-right {
+    .mobile-menu a {
         display: block;
-        float: none;
-        padding: 0 0 24px;
-        margin-left: 0;
+        color: var(--accent);
+        padding: 12px 15px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        transition: all 0.3s ease;
     }
-    .header-right-warp .header-right span { display: none; }
-    .header-right-warp .header-right .user-panel {
-        display: block;
-        padding-left: 26px;
+    .mobile-menu a:hover {
+        background: var(--highlight);
+        color: var(--bg);
+    }    .main-menu,
+    .header-right { display: none; }    /* Shop section responsive styles */
+    .shop-section {
+        padding: 100px 15px 60px;
     }
-    .header-right-warp .header-right .user-panel a {
-        display: inline-block;
-        padding: 0;
-        margin: 0;
+    .shop-section h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
     }
-    .header-right-warp .header-right .user-panel a:hover { background: transparent; }
-    .header-right-warp .header-right .user-panel .login { padding-right: 10px; }
+    .shop-section .card-body {
+        min-height: 400px;
+        padding: 20px;
+    }
+    .shop-section .card-title {
+        font-size: 20px;
+        height: 50px;
+    }
     .sub-text { margin-bottom: 50px; }
     .footer-widget { margin-bottom: 40px; }
     .category-section .section-title,
@@ -1601,10 +1630,24 @@ Artest Page
         position: absolute;
         bottom: 10px;
         left: 20px;
-    }
-    .map { height: 450px; }
+    }    .map { height: 450px; }
     .song-details-box ul { max-width: 100%; }
-    .search-form { margin-top: 40px; }
+    .search-form { margin-top: 40px; }    /* Shop section tablet responsive styles */
+    .shop-section {
+        padding: 90px 20px 60px;
+    }
+    .shop-section h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .shop-section .card-body {
+        min-height: 420px;
+        padding: 22px;
+    }
+    .shop-section .card-title {
+        font-size: 21px;
+        height: 55px;
+    }
 }
 @media (max-width: 767px) {
     .header-section,
@@ -1615,51 +1658,63 @@ Artest Page
         box-sizing: border-box;
     }
     .header-section { min-height: 72px; }
-    .hero-section { min-height: 724px; }
-    .hr-img { display: none; }
-    .slicknav_menu {
+    .hero-section { min-height: 724px; }    .hr-img { display: none; }
+    .mobile-menu-btn {
         display: block;
-        background: transparent;
-        margin-top: -60px;
-    }    .slicknav_nav {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
         background: var(--fg);
-        margin-bottom: 35px;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 1000;
     }
-    .slicknav_nav ul { margin: 0; }
-    .slicknav_nav .slicknav_row,
-    .slicknav_nav a {
-        padding: 12px 25px;
-        margin: 0;
+    .mobile-menu-btn span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--accent);
+        margin: 4px auto;
+        transition: all 0.3s ease;
     }
-    .slicknav_nav a:hover {
-        border-radius: 0;
-        color: var(--highlight);
-        background: transparent;
-    }    .slicknav_btn {
-        position: relative;
-        top: -24px;
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
         background: var(--fg);
+        border-radius: 15px;
+        padding: 20px;
+        min-width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        z-index: 999;
     }
-    .main-menu,
+    .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .mobile-menu a {
+        display: block;
+        color: var(--accent);
+        padding: 12px 15px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        transition: all 0.3s ease;
+    }
+    .mobile-menu a:hover {
+        background: var(--highlight);
+        color: var(--bg);
+    }    .main-menu,
     .header-right { display: none; }
-    .header-right-warp .header-right {
-        display: block;
-        float: none;
-        padding: 0 0 24px;
-        margin-left: 0;
-    }
-    .header-right-warp .header-right span { display: none; }
-    .header-right-warp .header-right .user-panel {
-        display: block;
-        padding-left: 26px;
-    }
-    .header-right-warp .header-right .user-panel a {
-        display: inline-block;
-        padding: 0;
-        margin: 0;
-    }
-    .header-right-warp .header-right .user-panel a:hover { background: transparent; }
-    .header-right-warp .header-right .user-panel .login { padding-right: 10px; }
     .sub-list { padding: 60px 15px 50px 30px; }
     .sub-text { margin-bottom: 50px; }
     .footer-widget { margin-bottom: 40px; }
@@ -1701,9 +1756,29 @@ Artest Page
     .songs-links {
         text-align: left;
         padding-top: 40px;
+    }    .song-details-box ul { max-width: 100%; }
+    .search-form { margin-top: 40px; }    /* Shop section mobile responsive styles */
+    .shop-section {
+        padding: 80px 10px 50px;
     }
-    .song-details-box ul { max-width: 100%; }
-    .search-form { margin-top: 40px; }
+    .shop-section h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .shop-section .card {
+        margin-bottom: 20px;
+    }
+    .shop-section .card-body {
+        min-height: 380px;
+        padding: 18px;
+    }
+    .shop-section .card-title {
+        font-size: 18px;
+        height: 45px;
+    }
+    .shop-section .card-text {
+        font-size: 15px;
+    }
 }
 @media (max-width: 479px) {
     .header-section,
@@ -1742,11 +1817,152 @@ Artest Page
     .player-box { padding: 15px; }
     .social-links a { margin-right: 20px; }
     .search-form { text-align: center; }
-    .search-form input { padding-right: 41px; }
-    .search-form button {
+    .search-form input { padding-right: 41px; }    .search-form button {
         position: relative;
         margin-top: 20px;
 		background: var(--highlight);
 		color: var(--accent);
+    }    /* Shop section smallest screen responsive styles */
+    .shop-section {
+        padding: 60px 8px 40px;
     }
+    .shop-section h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .shop-section .card {
+        margin-bottom: 15px;
+    }
+    .shop-section .card-body {
+        min-height: 350px;
+        padding: 15px;
+    }
+    .shop-section .card-title {
+        font-size: 16px;
+        height: 40px;
+    }
+    .shop-section .card-text {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .shop-section .site-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+/* ----------------
+Tienda de Beats (Shop Section)
+ -------------------*/
+
+.shop-section {
+	background: var(--bg);
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+
+.shop-section h2 {
+	color: var(--accent);
+	font-size: 48px;
+	margin-bottom: 60px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.shop-section .card {
+	background: var(--fg);
+	border: none;
+	border-radius: 20px;
+	height: 100%;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shop-section .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.shop-section .card-body {
+	padding: 25px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 450px;
+}
+
+.shop-section .card-title {
+	color: var(--accent);
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex-shrink: 0;
+}
+
+.shop-section .card-content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.shop-section .card-info {
+	flex-shrink: 0;
+	margin-bottom: 15px;
+}
+
+.shop-section .card-audio {
+	flex-shrink: 0;
+	margin: 15px 0;
+}
+
+.shop-section .card-button {
+	flex-shrink: 0;
+	margin-top: auto;
+}
+
+.shop-section .card-text {
+	color: var(--accent);
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.shop-section .card-text strong {
+	color: var(--highlight);
+	font-weight: 600;
+}
+
+.shop-section .card-body audio {
+	margin: 20px 0;
+	border-radius: 10px;
+}
+
+.shop-section .site-btn {
+	margin-top: auto;
+	padding: 15px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	min-width: auto;
+	width: 100%;
+	background: var(--highlight);
+	color: var(--bg);
+	border-radius: 15px;
+	transition: all 0.3s ease;
+}
+
+.shop-section .site-btn:hover {
+	background: var(--accent);
+	color: var(--bg);
+	transform: translateY(-2px);
+}
+
+.shop-section .site-btn i {
+	margin-right: 8px;
 }

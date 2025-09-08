@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>FullSound</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Compra canciones de tus artistas favoritos en SolMusic">
+    <meta name="keywords" content="tienda, canciones, música, comprar, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+
+    <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Pre-cargador de página -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>    <!-- Sección de encabezado -->
+    <header class="header-section clearfix">
+        <a href="index.html" class="site-logo">
+            <div class="logo-text">FullSound</div>
+        </a>
+        <div class="header-right">
+            <div class="user-panel">
+                <a href="" class="login">Iniciar sesión</a>
+                <a href="" class="register">Crear una cuenta</a>
+            </div> 
+        </div>        <ul class="main-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Beats.html">Beats</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="admin.html">Administracion</a></li>
+        </ul>
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html">Inicio</a>
+            <a href="Beats.html">Beats</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="admin.html">Administracion</a>
+        </div>
+		<!-- Arreglar links y CSS -->
+    </header>
+    <!-- Fin de sección de encabezado -->
+
+    <!-- Tienda de canciones -->
+    <section class="shop-section spad">
+        <div class="container">
+            <h2 class="mb-5 text-center">Tienda de Beats</h2>
+            <div class="row">                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">La melodia de Lampa</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Ismael Rivas</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Electrónica</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $250.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/1.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="Producto.html" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby girl</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Samuel Canchaya Smith</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Pop</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $999.999</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/2.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Renquiña</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Axel Moraga</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Chill</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> Gratis</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/3.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                <!-- Producto 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">McVsCs</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Diego Hernandez</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Hip-Hop</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $1.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/4.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Electro Night</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> DJ Nova</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Electro</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $24.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/5.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Acoustic Dreams</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Sofia Strings</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Acústico</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $19.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/6.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                <!-- Producto 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Latin Groove</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Carlos Rumba</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Latino</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $21.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/7.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Chillout Session</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> Relax Band</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Chillout</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $17.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/8.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 9 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Jazz & Soul</h5>
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <p class="card-text mb-1"><strong>Artista:</strong> The Blue Notes</p>
+                                    <p class="card-text mb-1"><strong>Género:</strong> Jazz</p>
+                                    <p class="card-text mb-2"><strong>Precio:</strong> $23.000</p>
+                                </div>
+                                <div class="card-audio">
+                                    <audio controls class="w-100 mb-2">
+                                        <source src="audio/1.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="card-button">
+                                    <a href="#" class="site-btn btn-block mt-auto"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin tienda de canciones -->
+
+    <!-- Sección de pie de página -->    <footer class="footer-section">
+		<div class="container">
+			<div class="footer-text">
+				<a href="creditos.html"> Creditos </a>
+			</div>
+			<div class="logo-text">FullSound</div>
+			<div class="copyright">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla fue creada con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+</div>
+		</div>
+    </footer>
+    <!-- Fin de sección de pie de página -->
+      <!--====== Javascripts y Jquery ======-->    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>

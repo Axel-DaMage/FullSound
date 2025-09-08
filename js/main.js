@@ -14,27 +14,14 @@ $(window).on('load', function() {
 	--------------------*/
 	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
-
-	if($('.playlist-area').length > 0 ) {
-		var containerEl = document.querySelector('.playlist-area');
-		var mixer = mixitup(containerEl);
-	}
-
 });
 
-(function($) {
-	/*------------------
-		Navigation
+(function($) {	/*------------------
+		Simple Responsive Menu
 	--------------------*/
-	$(".main-menu").slicknav({
-        appendTo: '.header-section',
-		allowParentLinks: true,
-		closedSymbol: '<i class="fa fa-angle-right"></i>',
-		openedSymbol: '<i class="fa fa-angle-down"></i>'
+	$('.mobile-menu-btn').on('click', function() {
+		$('.mobile-menu').toggleClass('active');
 	});
-	
-	$('.slicknav_nav').prepend('<li class="header-right-warp"></li>');
-    $('.header-right').clone().prependTo('.slicknav_nav > .header-right-warp');
 
 	/*------------------
 		Background Set

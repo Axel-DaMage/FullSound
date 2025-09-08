@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>SolMusic | Carrito de Compras</title>
+    <title>FullSound</title>
     <meta charset="UTF-8">
     <meta name="description" content="Carrito de compras SolMusic">
     <meta name="keywords" content="carrito, tienda, música, html">
@@ -13,13 +13,9 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
- 
-    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="css/slicknav.min.css"/>
 
     <!-- Main Stylesheets -->
     <link rel="stylesheet" href="css/style.css"/>
@@ -33,8 +29,7 @@
     <!-- Pre-cargador de página -->
     <div id="preloder">
         <div class="loader"></div>
-    </div>
-
+    </div>    
     <!-- Sección de encabezado -->
     <header class="header-section clearfix">
         <a href="index.html" class="site-logo">
@@ -45,13 +40,25 @@
                 <a href="" class="login">Iniciar sesión</a>
                 <a href="" class="register">Crear una cuenta</a>
             </div> 
-        </div> 
-        <ul class="main-menu">
+        </div>        <ul class="main-menu">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Tienda.html">Beats</a></li>
+            <li><a href="Beats.html">Beats</a></li>
             <li><a href="carrito.html">Carrito</a></li>
-            <li><a href="contact.html">Administracion</a></li>
+            <li><a href="admin.html">Administracion</a></li>
         </ul>
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html">Inicio</a>
+            <a href="Beats.html">Beats</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="admin.html">Administracion</a>
+        </div>
 		<!-- Arreglar links y CSS -->
     </header>
     <!-- Header section end -->
@@ -103,11 +110,10 @@
     </section>
     <!-- Fin carrito de compras -->
 
-    <!-- Footer section -->
-    <footer class="footer-section">
+    <!-- Footer section -->    <footer class="footer-section">
 		<div class="container">
-			<div class="footer-widget">
-				<h2>Footer</h2>
+			<div class="footer-text">
+				<a href="creditos.html"> Creditos </a>
 			</div>
 			<div class="logo-text">FullSound</div>
 			<div class="copyright">
@@ -116,13 +122,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
 		</div>
     </footer>
     <!-- Footer section end -->
-    
-    <!--====== Javascripts & Jquery ======-->
+      <!--====== Javascripts & Jquery ======-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
